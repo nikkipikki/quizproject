@@ -6,17 +6,17 @@ quizzes = [
 	{
 		"quiz_number": 1,
 		"name": "Nicole",
-		"description": "Hur bra kan du dina klassiker?"
+		"description": "Hur bra känner du Nicole?"
 	},
 	{
 		"quiz_number": 2,
 		"name": "Nicole &hearts; Mattias",
-		"description": "Kan du dina lag?"
+		"description": "Vad vet du om Nicole + Mattias?"
 	},
 	{
 		"quiz_number": 3,
 		"name": "Mattias",
-		"description": "Kan du din hackerhistoria?"
+		"description": "Hur bra känner du Mattias?"
 	},
 ]
 
