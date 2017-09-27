@@ -13,6 +13,9 @@
 		<h1> Q<span style="color: #FF237B">&hearts;</span>IZ
 		</h1>
 	</div>	
+	{% for quiz in quizzes %}
+		<p>{{ quiz.name }}</p>
+	{% endfor %}
 	<div class="last-container">
 		<div class="buttons">
 	   	 	<a href="file:///Users/nicolepehar/Desktop/quiz/quiz/quiz.html"> 
