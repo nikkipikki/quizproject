@@ -85,12 +85,10 @@ a, a:visited, a:active {
 }
 
 .columns {
-	float:left;
-	width:33.33%;
 	background-color: #BCB1B5;
-	display: block; 
 	padding: 20px;
 	margin-bottom: 30px;
+	overflow: hidden;
 
 }
 
@@ -114,12 +112,8 @@ a, a:visited, a:active {
 }
 
 .buttons {
-	float:left;
-	width:33.33%;
 	background-color: #BCB1B5;
-	display: block;
-	padding-top: 50px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 
 }
 .button2 {
@@ -132,6 +126,15 @@ a, a:visited, a:active {
 
 }
 
+.quiz-container {
+	float:left;
+	width:33.33%;
+	background-color: #BCB1B5;
+	display: block;
+	padding-top: 30px;
+	overflow: hidden;
+
+}
 
 .top-boarder {
 	float: left;
