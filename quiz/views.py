@@ -10,7 +10,7 @@ quizzes = [
 	},
 	{
 		"quiz_number": 2,
-		"name": "Nicole &hearts; Mattias",
+		"name": "Nicole + Mattias",
 		"description": "Vad vet du om Nicole + Mattias?"
 	},
 	{

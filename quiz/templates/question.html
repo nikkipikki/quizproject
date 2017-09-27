@@ -14,20 +14,18 @@
 		</h1>
 	</div>	
 		<h1>{{ question_number }}. {{ question }}</h1>
-		<p>{{ answer1 }}</p>
-		<p>{{ answer2 }}</p>
-		<p>{{ answer3 }}</p>
 	<div class="columns2"> 
-			<p class="column-color"> 
-			</p>
+			<p class="column-color2"> {{ answer1 }}</p>
+			<p class="column-color2"> {{ answer2 }}</p>
+			<p class="column-color2"> {{ answer3 }}</p>
 	</div>		
 	<div class="columns3">	
-			<P class="column-color2"> <span style="color: #000000">&dArr;</span>
+			<P class="column-color3"> <span style="color: #000000">&dArr;</span>
 			</P>
 	</div>	
 	<div class="button2">
    	 	<a href="{% url 'completed_page' quiz_number %}"> 
-		<input type="submit" value="QUIZ" class="input-search2">
+		<input type="submit" value="QUIZ" class="input-search2 input-search3">
 		</a>
 	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
