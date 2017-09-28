@@ -5,17 +5,17 @@ from django.shortcuts import render
 quizzes = [
 	{
 		"quiz_number": 1,
-		"name": "Nicole",
+		"name": "NICOLE",
 		"description": "Hur bra känner du Nicole?"
 	},
 	{
 		"quiz_number": 2,
-		"name": "Nicole + Mattias",
+		"name": "NICOLE + MATTIAS",
 		"description": "Vad vet du om Nicole + Mattias?"
 	},
 	{
 		"quiz_number": 3,
-		"name": "Mattias",
+		"name": "MATTIAS",
 		"description": "Hur bra känner du Mattias?"
 	},
 ]
