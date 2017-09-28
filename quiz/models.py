@@ -18,3 +18,8 @@ class Question(models.Model):
 	quiz = models.ForeignKey(Quiz, related_name="questions", on_delete=models.CASCADE)
 	def __str__(self):
 			return self.quiz.name + " / " + self.question
+
+class Symbols(models.Model):
+	symbols = models.CharField(max_length=100)
+	def __str__(self):
+			return self.symbols

@@ -10,17 +10,19 @@
 	</head> 
 	<body>
 	<div class="header-container2">
-		<h1> FR<span style="color: #FF237B">&#9792;</span>GOR
+		<h1> 
 		</h1>
 	</div>	
 		<h1>{{ question_number }}. {{ question }}</h1>
-	<div class="columns2"> 
-	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+	<div class="columnsquestions"> 
+	<form class="columns2" action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			 {% csrf_token %}
-			<input class="columnsquestions" type="radio" name="answer" value="1" checked> {{ answer1 }} <br>
-			<input class="columnsquestions" type="radio" name="answer" value="2"> {{ answer2 }} <br>
-			<input class="columnsquestions" type="radio" name="answer" value="3"> {{ answer3 }} <br>
-			<input type="submit" value="&#8674;" class="input-search2 input-search3">
+	<div class="columns2">		 
+			<input type="radio" name="answer" value="1" checked> {{ answer1 }} <br><br>
+			<input type="radio" name="answer" value="2"> {{ answer2 }} <br><br>
+			<input type="radio" name="answer" value="3"> {{ answer3 }} <br><br><br><br>
+			<input type="submit" value="&#8674;" class="input-search2 input-search3"> 
+	</div>		
 	</form>		
 	</div>		
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
