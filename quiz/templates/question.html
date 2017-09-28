@@ -15,9 +15,13 @@
 	</div>	
 		<h1>{{ question_number }}. {{ question }}</h1>
 	<div class="columns2"> 
-			<p class="column-color2"> {{ answer1 }}</p>
-			<p class="column-color2"> {{ answer2 }}</p>
-			<p class="column-color2"> {{ answer3 }}</p>
+	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+			 {% csrf_token %}
+			<input type="radio" name="answer" value="1"> {{ answer1 }}
+			<input type="radio" name="answer" value="2"> {{ answer2 }}
+			<input type="radio" name="answer" value="3"> {{ answer3 }}
+			<button type="submit">Nästa</button>
+	</form>		
 	</div>		
 	<div class="columns3">	
 			<P class="column-color3"> <span style="color: #000000">&dArr;</span>
@@ -31,4 +35,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	</body>
-</html>	
+</html>
