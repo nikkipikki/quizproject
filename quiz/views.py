@@ -1,29 +1,10 @@
 from django.shortcuts import render
-
-
-
-quizzes = [
-	{
-		"quiz_number": 1,
-		"name": "NICOLE",
-		"description": "Hur bra känner du Nicole?"
-	},
-	{
-		"quiz_number": 2,
-		"name": "NICOLE + MATTIAS",
-		"description": "Vad vet du om Nicole + Mattias?"
-	},
-	{
-		"quiz_number": 3,
-		"name": "MATTIAS",
-		"description": "Hur bra känner du Mattias?"
-	},
-]
+from quiz.models import Quiz
 
 
 def startpage(request):
 	context = {
-		"quizzes": quizzes,
+	    	"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "start.html", context)
 
