@@ -17,21 +17,12 @@
 	<div class="columns2"> 
 	<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			 {% csrf_token %}
-			<input type="radio" name="answer" value="1" checked> {{ answer1 }}
-			<input type="radio" name="answer" value="2"> {{ answer2 }}
-			<input type="radio" name="answer" value="3"> {{ answer3 }}
-			<button type="submit">Nästa</button>
+			<input class="columnsquestions" type="radio" name="answer" value="1" checked> {{ answer1 }} <br>
+			<input class="columnsquestions" type="radio" name="answer" value="2"> {{ answer2 }} <br>
+			<input class="columnsquestions" type="radio" name="answer" value="3"> {{ answer3 }} <br>
+			<input type="submit" value="&#8674;" class="input-search2 input-search3">
 	</form>		
 	</div>		
-	<div class="columns3">	
-			<P class="column-color3"> <span style="color: #000000">&dArr;</span>
-			</P>
-	</div>	
-	<div class="button2">
-   	 	<a href="{% url 'completed_page' quiz_number %}"> 
-		<input type="submit" value="QUIZ" class="input-search2 input-search3">
-		</a>
-	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	</body>
