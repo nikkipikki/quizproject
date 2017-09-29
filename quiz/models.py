@@ -4,6 +4,7 @@ from django.db import models
 
 class Quiz(models.Model):
 	quiz_number = models.PositiveIntegerField()
+	symbols = models.CharField(max_length=100)
 	name = models.CharField(max_length=100)
 	description = models.TextField()
 	def __str__(self):
@@ -18,8 +19,3 @@ class Question(models.Model):
 	quiz = models.ForeignKey(Quiz, related_name="questions", on_delete=models.CASCADE)
 	def __str__(self):
 			return self.quiz.name + " / " + self.question
-
-class Symbols(models.Model):
-	symbols = models.CharField(max_length=100)
-	def __str__(self):
-			return self.symbols
