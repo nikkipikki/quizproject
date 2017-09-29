@@ -21,12 +21,3 @@ if __name__ == "__main__":
         raise
     execute_from_command_line(sys.argv)
 
-from quiz.models import Quiz 
-Quiz.objects.all()
-Quiz.objects.get(quiz_number=1)
-quiz = Quiz.objects.get(quiz_number=1)
-quiz.description
-quiz.questions.all()
-for question in quiz.questions.all(): print(question.correct)
-
-
