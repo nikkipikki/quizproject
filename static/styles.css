@@ -19,7 +19,7 @@ h1 {
 	text-align:center;
 	font-size: 40px;
 	color: #000000;
-	margin-top: 30px;
+	padding-top: 50px;
 }
 
 h2 {
@@ -311,7 +311,7 @@ a, a:visited, a:active, a:hover {
 .column-color2 {
 	color: #000000;
 	font-size: 20px;
-	margin-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .column-color3 {
