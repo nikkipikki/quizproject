@@ -378,4 +378,12 @@ input[value="LOVE"] {
 	padding: 10px;
 }
 
+.header-container2 {
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
 }
