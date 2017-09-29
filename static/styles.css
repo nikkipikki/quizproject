@@ -21,6 +21,12 @@ h1 {
 	color: #000000;
 }
 
+h2 {
+	text-align:center;
+	font-size: 40px;
+	color: #000000;
+}
+
 a, a:visited, a:active, a:hover {
 	text-decoration: none;
 }
@@ -386,7 +392,7 @@ input[value="LOVE"] {
 	padding-bottom: 30px;
 }
 
-h1 {
+h2 {
 	text-align:center;
 	font-size: 20px;
 	color: #000000;

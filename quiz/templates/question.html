@@ -13,7 +13,7 @@
 		<h1> <span style="color: #000000">&#9792;&hearts;&#9794;</span>
 		</h1>
 	</div>	
-		<h1>{{ question_number }}. {{ question }}</h1>
+		<h2>{{ question_number }}. {{ question }}</h2>
 	<div class="columnsquestions"> 
 	<form class="columns2" action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
 			 {% csrf_token %}
