@@ -349,7 +349,7 @@ input[value="LOVE"] {
         border:10px;
         box-shadow: 0px 0px 30px #ffffff;
         text-align: center; 
-        font-size: 35px;
+        font-size: 15px;
       	margin-top: 50px;
       	margin: 0 auto;
       	
@@ -364,7 +364,7 @@ input[value="LOVE"] {
         border:10px;
         box-shadow: 0px 0px 50px #000000;
         text-align: center; 
-        font-size: 35px;
+        font-size: 15px;
         -webkit-transition-duration: 0.4s; /* Safari */
     	transition-duration: 0.4s;
    		cursor: pointer;
