@@ -437,4 +437,11 @@ h2 {
 	color: #000000;
 }
 
+h1 {
+	text-align:center;
+	font-size: 40px;
+	color: #000000;
+	padding-top: 20px;
+}
+
 }
