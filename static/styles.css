@@ -39,7 +39,15 @@ a, a:visited, a:active, a:hover {
 	width: 100%;
 	background-color: #ffffff;
 	padding-top: 150px;
-	padding-bottom: 100px;
+	padding-bottom: 30px;
+}
+
+.header-container3 {
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 
 .image-container {
