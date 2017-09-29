@@ -338,7 +338,7 @@ input[value="LOVE"] {
                 font-family: "Roboto_Mono";
 } 
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 640px) {
 
 .input-search2 {
 		height: 100px;
