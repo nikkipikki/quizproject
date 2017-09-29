@@ -19,6 +19,7 @@ h1 {
 	text-align:center;
 	font-size: 40px;
 	color: #000000;
+	padding-bottom: 20px;
 }
 
 h2 {
@@ -310,6 +311,7 @@ a, a:visited, a:active, a:hover {
 .column-color2 {
 	color: #000000;
 	font-size: 20px;
+	padding-bottom: 20px;
 }
 
 .column-color3 {
