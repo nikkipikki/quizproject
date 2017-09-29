@@ -18,7 +18,7 @@
 	<div class="quiz-container">
 	<div class="buttons">
 	   	 	<a href="{% url 'quiz_page' quiz.quiz_number %}"> 
-			<input type="submit" value="&#9792;&hearts;&#9794;" class="input-search input-search1">
+			<input type="submit" value="{{ quiz.symbols|safe }}" class="input-search input-search1">
 			</a>
 		</div>
 		<div class="columns"> 
