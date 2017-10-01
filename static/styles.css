@@ -118,9 +118,10 @@ a, a:visited, a:active, a:hover {
 	width: 200px;
 }
 
-.columns3 {
+.columnsx {
 	background-color: #ffffff;
-	margin: 0 auto;
+	float: left;
+
 }
 
 .textquestion {
