@@ -38,6 +38,13 @@ def completed(request, quiz_number):
 	num_correct_answers = 0
 	for question_number, answer in saved_answers.items():
 		correct_answer = questions[int(question_number) - 1].correct
+		if correct_answer == 1:
+			questions[int(question_number) - 1].question_text = questions[int(question_number) - 1].answer1
+		elif correct_answer == 2:
+			questions[int(question_number) - 1].question_text = questions[int(question_number) - 1].answer2
+		elif correct_answer == 3:
+			questions[int(question_number) - 1].question_text = questions[int(question_number) - 1].answer3
+
 		if correct_answer == answer:
 			num_correct_answers = num_correct_answers + 1
 	num_questions = quiz.questions.count()

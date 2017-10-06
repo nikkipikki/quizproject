@@ -16,7 +16,7 @@
 		<h1>..och fick {{ correct }} av {{ total }}</h1>
 		{% for question in questions %}
 			<h3>Frågan var: {{ question.question }}</h3>
-			<h3>Rätt svar, var nummer: {{ question.correct }}</h3>
+			<h3>Rätt svar var: {{ question.question_text }}</h3>
 			<h3>Ditt svar, var nummer: {{ question.user_answer }}</h3>
 			{% if question.correct == question.user_answer %}
 					<h3>Du hade RÄTT</h3>
