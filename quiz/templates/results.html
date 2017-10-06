@@ -17,12 +17,7 @@
 		{% for question in questions %}
 			<h3>Frågan var: {{ question.question }}</h3>
 			<h3>Rätt svar var: {{ question.question_text }}</h3>
-			<h3>Ditt svar, var nummer: {{ question.user_answer }}</h3>
-			{% if question.correct == question.user_answer %}
-					<h3>Du hade RÄTT</h3>
-			{% else %}
-					<h3>Du hade FEL</h3>
-			{% endif %}
+			<h3>Ditt svar var: {{ question.answer_text }}</h3>
 		{% endfor %}
 	<div class="button2">
    	 	<a href="{% url 'start_page' %}"> 

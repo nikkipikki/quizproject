@@ -45,6 +45,13 @@ def completed(request, quiz_number):
 		elif correct_answer == 3:
 			questions[int(question_number) - 1].question_text = questions[int(question_number) - 1].answer3
 
+		if answer == 1:
+			questions[int(question_number) - 1].answer_text = questions[int(question_number) - 1].answer1
+		elif answer == 2:
+			questions[int(question_number) - 1].answer_text = questions[int(question_number) - 1].answer2
+		elif answer == 3:
+			questions[int(question_number) - 1].answer_text = questions[int(question_number) - 1].answer3
+
 		if correct_answer == answer:
 			num_correct_answers = num_correct_answers + 1
 	num_questions = quiz.questions.count()
