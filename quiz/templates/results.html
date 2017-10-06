@@ -15,13 +15,13 @@
 	</div>	
 		<h1>..och fick {{ correct }} av {{ total }}</h1>
 		{% for question in questions %}
-			<p>Frågan var: {{ question.question }}</p>
-			<p>Rätt svar, var nummer: {{ question.correct }}</p>
-			<p>Ditt svar, var nummer: {{ question.user_answer }}</p>
+			<h3>Frågan var: {{ question.question }}</h3>
+			<h3>Rätt svar, var nummer: {{ question.correct }}</h3>
+			<h3>Ditt svar, var nummer: {{ question.user_answer }}</h3>
 			{% if question.correct == question.user_answer %}
-					<p>Du hade RÄTT</p>
+					<h3>Du hade RÄTT</h3>
 			{% else %}
-					<p>Du hade FEL</p>
+					<h3>Du hade FEL</h3>
 			{% endif %}
 		{% endfor %}
 	<div class="button2">

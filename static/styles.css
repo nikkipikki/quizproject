@@ -12,13 +12,13 @@ body {
 p {
 	text-align:center;
 	font-size:15px;
-	color: #000000;
+	color: #f9f9f2;
 }
 
 p {
 	text-align:center;
 	font-size:15px;
-	color: #000000;
+	color: #f9f9f2;
 }
 
 h1 {
@@ -31,6 +31,12 @@ h1 {
 h2 {
 	text-align:center;
 	font-size: 40px;
+	color: #000000;
+}
+
+h3 {
+	text-align:center;
+	font-size: 15px;
 	color: #000000;
 }
 
