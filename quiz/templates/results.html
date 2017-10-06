@@ -17,11 +17,11 @@
 		<br><br>
 		{% for question in questions %}
 			<h3>Fråga {{ forloop.counter }} var: {{ question.question }}</h3>
-			<h3>Rätt svar var: {{ question.question_text }}</h3>
+			<h3>Rätt svar = {{ question.question_text }}</h3>
 			{% if question.question_text != question.answer_text %}
 				<h3 style="color: #FF237B;">Ditt svar var: {{ question.answer_text }}</h3>
 			{% else %}
-				<h3>Ditt svar var: {{ question.answer_text }}</h3>
+				<h3>Ditt svar = {{ question.answer_text }}</h3>
 			{% endif %}
 
 		{% endfor %}
