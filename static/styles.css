@@ -12,7 +12,13 @@ body {
 p {
 	text-align:center;
 	font-size:15px;
-	color: #f9f9f2;
+	color: #000000;
+}
+
+p {
+	text-align:center;
+	font-size:15px;
+	color: #000000;
 }
 
 h1 {
@@ -103,6 +109,7 @@ a, a:visited, a:active, a:hover {
 	background-color: #181818;
 	padding-bottom: 30px;
 	overflow: hidden;
+	font: #f9f9f2;
 
 }
 
