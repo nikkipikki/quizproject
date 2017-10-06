@@ -14,6 +14,16 @@
 		</h1>
 	</div>	
 		<h1>..och fick {{ correct }} av {{ total }}</h1>
+		{% for question in questions %}
+			<p>Frågan var: {{ question.question }}</p>
+			<p>Rätt svar, var nummer: {{ question.correct }}</p>
+			<p>Ditt svar, var nummer: {{ question.user_answer }}</p>
+			{% if question.correct == question.user_answer %}
+					<p>Du hade RÄTT</p>
+			{% else %}
+					<p>Du hade FEL</p>
+			{% endif %}
+		{% endfor %}
 	<div class="button2">
    	 	<a href="{% url 'start_page' %}"> 
 		<input type="submit" value="&#8634;" class="input-search2 input-search3">
