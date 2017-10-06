@@ -26,6 +26,25 @@
 
 		{% endfor %}
 	<div class="button2">
+	<views> 
+			$mailTo = "admin@mywebsite.com";
+  			$msgSubject = "Your Trivia Results";
+  			$msgBody = "Hi!\n\n";
+		$msgBody .= "On Trivia #1 you got ";
+		$msgBody .= $totalCorrect . " out of 5 correct!\n ";
+		$msgBody .= "You earned ";
+		$msgBody .= $totalCorrect . "0 Coins!\n\n";
+		$msgBody .= "Here are your Trivia Results:\n";
+		$msgBody .= $answer1 . "\n";
+		$msgBody .= $answer2 . "\n";
+		$msgBody .= $answer3 . "\n";
+		$msgBody .= $answer4 . "\n";
+		$msgBody .= $answer5 . "\n\n";
+		$msgBody .= "Thanks for Playing!\n\n";
+  			$xHeaders = "From:";
+
+  			mail ($mailTo, $msgSubject, $msgBody, $xHeaders);
+	</views>
    	 	<a href="{% url 'start_page' %}"> 
 		<input type="submit" value="&#8634;" class="input-search2 input-search3">
 		</a>
