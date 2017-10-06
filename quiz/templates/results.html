@@ -19,7 +19,7 @@
 			<h3>Fråga {{ forloop.counter }} var: {{ question.question }}</h3>
 			<h3>Rätt svar: {{ question.question_text }}</h3>
 			{% if question.question_text != question.answer_text %}
-				<h3 style="color: #FF237B;">Du svarade fel -> {{ question.answer_text }}</h3>
+				<h3 style="color: #FF237B;">Du svarade fel &#10006; {{ question.answer_text }}</h3>
 			{% else %}
 				<h3 style="color: #0ed193;">Du svarade rätt &#10004;</h3>
 			{% endif %}
