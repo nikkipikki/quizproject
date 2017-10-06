@@ -15,7 +15,7 @@
 	</div>	
 		<h1>..och fick {{ correct }} av {{ total }}</h1>
 		{% for question in questions %}
-			<h3>Frågan var: {{ question.question }}</h3>
+			<h3>Fråga {{ forloop.counter }} var: {{ question.question }}</h3>
 			<h3>Rätt svar var: {{ question.question_text }}</h3>
 			<h3>Ditt svar var: {{ question.answer_text }}</h3>
 		{% endfor %}
